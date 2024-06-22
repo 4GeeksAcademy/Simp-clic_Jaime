@@ -1,7 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 
- const SimpleCounter = () => {
+
+import const = SimpleCounter = () => {
   const [seconds, setSeconds] = useState(0);
   const [isActive, setIsActive] = useState(false);
 
@@ -47,4 +48,4 @@ import React, { useState, useEffect } from 'react';
 };
 
 
-export default SimpleCounter;
+
