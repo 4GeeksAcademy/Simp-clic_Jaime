@@ -1,8 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 
-
-import const = SimpleCounter = () => {
+export const SimpleCounter = () => {
   const [seconds, setSeconds] = useState(0);
   const [isActive, setIsActive] = useState(false);
 
@@ -31,15 +29,15 @@ import const = SimpleCounter = () => {
   };
 
   return (
-    <div style={styles.container}>
-      <div style={styles.timer}>
+    <div className="container">
+      <div className="timer">
         {formatTime(seconds)}
       </div>
-      <div style={styles.buttons}>
-        <button onClick={() => setIsActive(!isActive)} style={styles.button}>
+      <div className="buttons">
+        <button onClick={() => setIsActive(!isActive)} className="button">
           {isActive ? 'Pause' : 'Start'}
         </button>
-        <button onClick={reset} style={styles.button}>
+        <button onClick={reset} className="button">
           Reset
         </button>
       </div>

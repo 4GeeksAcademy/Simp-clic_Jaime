@@ -1,5 +1,6 @@
 import React from "react";
-import SimpleCounter from "./SimpleCounter.jsx";
+import { SimpleCounter } from "./SimpleCounter";
+
 
 
 
@@ -7,7 +8,7 @@ import SimpleCounter from "./SimpleCounter.jsx";
 const Home = () => {
 	return (
 		<div className="App">
-		<SimpleCounter />
+		< SimpleCounter />
 		</div>
 	);
 };
